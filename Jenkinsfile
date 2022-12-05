@@ -17,6 +17,8 @@ pipeline {
       steps {
         sh 'whoami'
         sh 'pwd'
+        sh 'which java'
+        sh 'which mvn'
         sh 'java -version'
         sh 'mvn -version'
         sh 'mvn clean compile'
