@@ -15,6 +15,7 @@ pipeline {
     }
     stage('Build') {
       steps {
+        sh 'whoami'
         sh 'pwd'
         sh 'java -version'
         sh 'mvn -version'
